@@ -37,10 +37,15 @@ import { AnNewsSectionComponent } from './an-news-section/an-news-section.compon
     CarouselModule
   ],
   exports:[
+    AnmainComponent,
     AnHomeBannerComponent,
     AnHomeSliderComponent,
     AnLeftImageTextComponent,
-    AnRightImageTextComponent
+    AnRightImageTextComponent,
+    AnStatisticsIncrementorComponent,
+    AnSectionMessageComponent,
+    AnSectionCoursesComponent,
+    AnNewsSectionComponent
   ]
 })
 export class AnhomeModule { }

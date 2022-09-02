@@ -1145,7 +1145,7 @@ blockquote p {
   color: #d72b32 !important;
 }
 .dark-parimary-bg {
-  background: #203154 !important;
+  background: #342424 !important;
 }
 ul.listing-style li {
   position: relative;
@@ -14111,8 +14111,8 @@ body .modal-backdrop {
     37. Footer Section CSS
 ------------------------------------*/
 .rs-footer {
-  background-color: #273c66;
-  background-image: url(/assets/images/bg/footer-bg.png);
+  background-color: #342424;
+  /* background-image: url(/assets/images/bg/footer-bg.png); */
   background-size: cover;
 }
 .rs-footer .footer-top {
@@ -14145,7 +14145,7 @@ body .modal-backdrop {
   transform: translateY(-50%);
   width: 6px;
   height: 6px;
-  background: #21a7d0;
+  background: #fff;
 }
 .rs-footer .footer-top .site-map li:last-child {
   margin-bottom: 0;
@@ -14186,7 +14186,7 @@ body .modal-backdrop {
   color: #f3f8f9;
 }
 .rs-footer .footer-bottom .copyright a {
-  color: #21a7d0;
+  color: #fff;
 }
 .rs-footer .footer-bottom .footer-logo a {
   display: inline-block;

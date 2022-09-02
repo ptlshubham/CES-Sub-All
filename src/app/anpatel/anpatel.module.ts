@@ -4,15 +4,23 @@ import { AnsharedModule } from './anshared/anshared.module';
 import { AnhomeModule } from './anhome/anhome.module';
 import { RouterModule } from '@angular/router';
 import { AnPatelRoutes } from './anpatel.routing';
+import { AnbasicModule } from './anbasic/anbasic.module';
+import { AncourseModule } from './ancourse/ancourse.module';
+import { AninfrastructureModule } from './aninfrastructure/aninfrastructure.module';
+
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     AnsharedModule,
     AnhomeModule,
+    AnbasicModule,
+    AncourseModule,
+    AninfrastructureModule,
     RouterModule.forChild(AnPatelRoutes)
   ]
 })
