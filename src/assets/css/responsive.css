@@ -592,14 +592,14 @@
         line-height: 28px;
     }
     .why-choose-us.style2 .facilities-two .content-part .text-part .title {
-        font-size: 19px;
+        font-size: 11px;
         line-height: 30px;
     }
     .why-choose-us.style2 .facilities-two .content-part .icon-part {
-        width: 75px;
+        width: 35px;
         line-height: 75px;
         border-radius: 50%;
-        margin-right: 15px;
+        /* margin-right: 15px; */
     }
     .rs-newsletter.style2.home11-style .sec-title2 .title {
         font-size: 38px;
@@ -1176,7 +1176,7 @@
     }
   
     .rs-faq-part.style1 .main-part {
-        padding: 60px 50px 70px;
+        padding: 0px 50px 70px;
     }
     .lg-pr-0 {
         padding-right: 0;

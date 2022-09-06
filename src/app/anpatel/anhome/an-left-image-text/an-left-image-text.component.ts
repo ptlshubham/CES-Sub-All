@@ -17,8 +17,8 @@ export class AnLeftImageTextComponent implements OnInit {
   public subtitle: string = '';
   public asubtitle: string = 'Shri Alpesh N. Patel PG Institute of Science & Research';
   public tsubtitle: string = 'Charotar Education Society';
-  public dimg: string = 'assets/images/about/home11/about.png';
-  himg: string = 'assets/images/choose/why.png';
+  public dimg: string = 'assets/images/anpatel/about/1.jpg';
+  himg: string = 'assets/images/anpatel/about/1.jpg';
   daimg: string = '';
   constructor(
     private router: Router,
@@ -40,7 +40,7 @@ export class AnLeftImageTextComponent implements OnInit {
     else {
       // this.title = this.abouttitle;
       this.subtitle = this.asubtitle;
-      this.textdata = this.aboutdata;
+      this.textdata = this.aboutdata; 
       this.daimg = this.himg;
 
     }

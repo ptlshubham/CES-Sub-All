@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const AnPatelRoutes: Routes = [{
     path: '',
-    redirectTo: 'anhome/anmain',
+    redirectTo: 'anhome/anmain/',
     pathMatch: 'full',
 },
 {

@@ -18,5 +18,21 @@ export class AnheaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayStyle = "none";
+  displayStyle1 = "none";
+  displayStyle2 = "none";
+  openPopup() {
+    this.displayStyle = "block";
+  }
+  closePopup() {
+    this.displayStyle = "none";
+    this.displayStyle1 = "none";
+    this.displayStyle2 = "none";
+  }
+  openPopup1() {
+    this.displayStyle1 = "block";
+  }
+  openPopup2() {
+    this.displayStyle2 = "block";
+  }
 }

@@ -133,7 +133,7 @@ h6 {
   font-weight: 800 !important;
 }
 a {
-  color: #21a7d0;
+  color: #342424;
   transition: all 0.3s ease;
   text-decoration: none !important;
   outline: none !important;
@@ -184,7 +184,7 @@ ul {
   background: #f3f8f9;
 }
 .gray-bg3 {
-  background: #e7f9fb;
+  background: #FFF4F3;
 }
 .gray-bg2 {
   background: #e7f6f9;
@@ -1319,7 +1319,7 @@ ul.listing-style.modify li:before {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
-  color: #21a7d0;
+  color: #342424;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -1336,7 +1336,7 @@ ul.listing-style.modify li:before {
   color: #ffffff;
 }
 .sec-title2 .title.purple-color {
-  color: #4e49a1 !important;
+  color: #342424 !important;
 }
 .sec-title3 .sub-title {
   font-size: 16px;
@@ -8190,11 +8190,11 @@ body .modal-backdrop {
   margin-bottom: -37px;
 }
 .why-choose-us.style2 .facilities-two .content-part .icon-part {
-  /* width: 80px; */
+  width: 80px;
   line-height: 79px;
   text-align: center;
   border-radius: 50%;
-  margin-right: 8px;
+  /* margin-right: 8px; */
   position: relative;
   transition: all 0.3s ease;
 }
