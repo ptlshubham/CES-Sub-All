@@ -13,7 +13,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     CommonModule,
-    NgbCollapseModule
+    NgbCollapseModule,
 
   ],
   exports: [

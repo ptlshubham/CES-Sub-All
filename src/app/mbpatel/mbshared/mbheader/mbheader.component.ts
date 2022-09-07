@@ -21,6 +21,7 @@ export class MbheaderComponent implements OnInit {
   displayStyle = "none";
   displayStyle1 = "none";
   displayStyle2 = "none";
+  displayStyle3 = "none";
   openPopup() {
     this.displayStyle = "block";
   }
@@ -28,12 +29,16 @@ export class MbheaderComponent implements OnInit {
     this.displayStyle = "none";
     this.displayStyle1 = "none";
     this.displayStyle2 = "none";
+    this.displayStyle3 = "none";
   }
   openPopup1() {
     this.displayStyle1 = "block";
   }
   openPopup2() {
     this.displayStyle2 = "block";
+  }
+  openPopup3() {
+    this.displayStyle3 = "block";
   }
 
 }
