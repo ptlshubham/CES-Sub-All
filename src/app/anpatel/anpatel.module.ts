@@ -7,6 +7,7 @@ import { AnPatelRoutes } from './anpatel.routing';
 import { AnbasicModule } from './anbasic/anbasic.module';
 import { AncourseModule } from './ancourse/ancourse.module';
 import { AninfrastructureModule } from './aninfrastructure/aninfrastructure.module';
+import { AnmoreModule } from './anmore/anmore.module';
 
 
 
@@ -21,6 +22,7 @@ import { AninfrastructureModule } from './aninfrastructure/aninfrastructure.modu
     AnbasicModule,
     AncourseModule,
     AninfrastructureModule,
+    AnmoreModule,
     RouterModule.forChild(AnPatelRoutes)
   ]
 })

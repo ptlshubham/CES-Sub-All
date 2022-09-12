@@ -13,4 +13,12 @@ export const MbPatelRoutes: Routes = [{
     path: 'basic',
     loadChildren: () => import('./mbbasic/mbbasic.module').then(m => m.MbbasicModule)
 },
+{
+    path: 'department',
+    loadChildren: () => import('./mbdepartment/mbdepartment.module').then(m => m.MbdepartmentModule)
+},
+{
+    path: 'more',
+    loadChildren: () => import('./mbmore/mbmore.module').then(m => m.MbmoreModule)
+}
 ];

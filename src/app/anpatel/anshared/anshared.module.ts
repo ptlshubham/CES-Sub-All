@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AnheaderComponent } from './anheader/anheader.component';
 import { AnfooterComponent } from './anfooter/anfooter.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,8 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     CommonModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    RouterModule,
   ],
   exports:[
     AnheaderComponent,

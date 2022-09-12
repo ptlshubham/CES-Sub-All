@@ -1798,6 +1798,12 @@
         height: unset;
         line-height: unset;
     }
+    .full-width-header .rs-header .logo-part img{
+        margin-left: 0px;
+    }
+    .rs-footer .footer-bottom .footer-logo a img{
+        max-width:241px
+    }
     .full-width-header.header-style3.modify .rs-header .menu-area .logo-part {
         height: 90px;
         line-height: 90px;

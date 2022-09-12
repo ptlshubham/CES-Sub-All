@@ -49,9 +49,9 @@
                     <ul class="topbar-right">
                         <li class="menu-item lm">
                             <div class="wrap">
-                                <div class="search">
+                                <div class="search" >
                                     <input type="text" class="searchTerm" placeholder="What are you looking for?"
-                                        style="color: #342424;">
+                                        style="color: #573229;">
                                     <button type="submit" class="searchButton">
                                         <i class="fa fa-search"></i>
                                     </button>
@@ -86,29 +86,21 @@
                 aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"
                 (click)="isCollapsed = !isCollapsed">
                 <!-- <span class="navbar-toggler-icon"> </span> -->
-                <img class="navbar-toggler-icon" src="assets/images/shape/icon.png" alt="">
+                <!-- <img class="navbar-toggler-icon" src="assets/images/shape/icon.png" alt=""> -->
+                <i class="fa fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
                 <ul class="nav-menu" style="padding: 25px!important;">
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Home</a>
+                            aria-expanded="false" routerLink="/mbpatel/home/main" routerLinkActive="active">Home</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item">CES Home</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
-                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">History</a> </li>
-                            <li><a class="dropdown-item">Facility</a> </li>
-                            <li><a class="dropdown-item">Activities</a> </li>
-                            <li><a class="dropdown-item">Scholarships for Students</a> </li>
-                            <li><a class="dropdown-item">Fee Structure- 2020-21</a> </li>
-
-                        </ul>
+                        <a class="btn btn-lg " routerLink="/mbpatel/basic/about" routerLinkActive="active">About Us</a>
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -119,37 +111,31 @@
                             <li><a class="dropdown-item">Videos</a> </li>
                         </ul>
                     </li>
-
-                    <!-- <li class="btn-group">
-                        <a class="btn btn-lg" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Infrastructure</a>
-
-                    </li> -->
-
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Course</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Syllabus</a> </li>
+                            <li><a (click)="openPopup()">Syllabus</a> </li>
                             <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
                                     target="_blank">Course Outcomes</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
-                        <a class="btn btn-lg" routerLink="/basic/alumni" routerLinkActive="active">Contact Us</a>
+                        <a class="btn btn-lg" routerLink="/mbpatel/basic/contact" routerLinkActive="active">Contact
+                            Us</a>
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">More</a>
                         <ul class="dropdown-menu">
                             <!-- <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Department</a> </li> -->
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Results</a> </li>
+                            <li><a class="dropdown-item" routerLink="">Results</a> </li>
                             <li><a class="dropdown-item"
                                     href="http://www.cesociety.in/mbpatelscience/images/Forms/MB%20Science%20College%20Prospectus%202018%20-%202019-min.pdf"
                                     target="_blank">Prospectus</a> </li>
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">NAAC</a>
+                            <li><a class="dropdown-item" routerLink="">NAAC</a>
                             </li>
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Student Info.</a>
+                            <li><a class="dropdown-item" routerLink="">Student Info.</a>
                             </li>
                             <li>
                                 <a class="dropdown-item"
@@ -178,11 +164,9 @@
                                     href="http://www.cesociety.in/mbpatelscience/images/news/Anti_Ragging.pdf"
                                     target="_blank">Anti-Ragging</a>
                             </li>
-                            <!-- <li><a class="dropdown-item" routerLink="" routerLinkActive="active"
-                                    (click)="openPopup1()">Form</a> </li>
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active"
-                                    (click)="openPopup2()">Annual Reports</a>
-                            </li> -->
+                            <li>
+                                <a class="dropdown-item">Bank Details</a>
+                            </li>
                         </ul>
                     </li>
 
@@ -195,7 +179,7 @@
         <div class="menu-area menu-sticky">
             <!-- main-menu -->
             <div class="container" style="max-width:1750px;">
-                <div class="row y-middle" style="background-color: #342424 ; height: 50px;">
+                <div class="row y-middle" style="background-color: #573229 ; height: 50px;">
                     <div class="col-lg-12 text-end">
                         <div class="rs-menu-area">
                             <div class="main-menu">
@@ -203,25 +187,14 @@
                                 <nav class="rs-menu">
                                     <ul class="nav-menu">
                                         <li class="menu-item-has-children">
-                                            <a routerLink="/home/main" routerLinkActive="active">Home</a>
+                                            <a routerLink="/mbpatel/home/main" routerLinkActive="active">Home</a>
                                             <ul class="sub-menu">
                                                 <li><a routerLink="" routerLinkActive="active">CES Home</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a>About Us</a>
-                                            <ul class="sub-menu">
-                                                <li><a routerLink="mbpatel/" routerLinkActive="active">History</a>
-                                                </li>
-                                                <li><a routerLink="mbpatel/" routerLinkActive="active">Facility</a>
-                                                </li>
-                                                <li><a routerLink="" routerLinkActive="active">Activities</a> </li>
-                                                <li><a routerLink="" routerLinkActive="active">Scholarships for
-                                                        Students</a> </li>
-                                                <li><a routerLink="" routerLinkActive="active">Fee Structure-
-                                                        2020-21 </a> </li>
-                                            </ul>
+                                        <li>
+                                            <a routerLink="/mbpatel/basic/about" routerLinkActive="active">About Us</a>
                                         </li>
 
                                         <li class="menu-item-has-children">
@@ -231,26 +204,21 @@
                                                 <li><a href="#">Videos</a> </li>
                                             </ul>
                                         </li>
-
-                                        <!-- <li class="menu-item">
-                                            <a href="#">Infrastructure</a>
-                                        </li> -->
-
                                         <li class="menu-item-has-children">
                                             <a href="">Course</a>
                                             <ul class="sub-menu">
-                                                <li><a routerLink="" routerLinkActive="active">Syllabus</a> </li>
+                                                <li><a (click)="openPopup()">Syllabus</a> </li>
                                                 <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
                                                         target="_blank">Course Outcomes</a> </li>
                                             </ul>
                                         </li>
                                         <li class="">
-                                            <a routerLink="" routerLinkActive="active">Contact Us</a>
+                                            <a routerLink="/mbpatel/basic/contact" routerLinkActive="active">Contact
+                                                Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a routerLink="" routerLinkActive="active">More</a>
                                             <ul class="sub-menu">
-                                                <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
                                                 <li><a routerLink="" routerLinkActive="active">Results</a> </li>
                                                 <li>
                                                     <a href="http://www.cesociety.in/mbpatelscience/images/Forms/MB%20Science%20College%20Prospectus%202018%20-%202019-min.pdf"
@@ -311,8 +279,9 @@
                                                                 <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/College_Committee_list_2018.pdf"
                                                                         target="_blank">College Committee Lists</a>
                                                                 </li>
-                                                                <li><a href="#">Academic Calenders</a> </li>
-                                                                <li><a href="#">NAAC Criteria</a> </li>
+                                                                <li><a (click)="openPopup4()">Academic Calenders</a>
+                                                                </li>
+                                                                <li><a (click)="openPopup5()">NAAC Criteria</a> </li>
                                                                 <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Feedback.pdf"
                                                                         target="_blank">Sample Feedback</a> </li>
                                                             </div>
@@ -336,16 +305,60 @@
                                                                         target="_blank">NAAC Accreditation</a> </li>
                                                             </div>
                                                         </div>
-
-
-
-
-
                                                     </ul>
                                                 </li>
 
                                                 <li class="menu-item-has-children">
                                                     <a href="#">Student Info.</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="#">Admission list</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2013_2014.pdf"
+                                                                        target="_blank">2013-14</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2014_2015.pdf"
+                                                                        target="_blank">2014-15</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2015_2016.pdf"
+                                                                        target="_blank">2015-16</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2016_2017.pdf"
+                                                                        target="_blank">2016-17</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2017_2018.pdf"
+                                                                        target="_blank">2017-18</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2018_2019.pdf"
+                                                                        target="_blank">2018-19</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Year_2019-20.pdf"
+                                                                        target="_blank">2019-20</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a routerLink="/mbpatel/more/form"
+                                                                routerLinkActive="active">Student Detail Form</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="http://www.cesociety.in/mbpatelscience/images/news/Exam%20Pattern.pdf"
+                                                                target="_blank">Exam Patterns</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="#">Student Enrollment</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT%20-2020-21.pdf"
+                                                                        target="_blank">2020-21</a></li>
+                                                                <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT-2019-20.pdf"
+                                                                        target="_blank">2019-20</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="http://www.cesociety.in/mbpatelscience/images/news/Gold%20Medal.pdf"
+                                                                target="_blank">Achievements</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a (click)="openPopup3()">Timetable Sem 1 to 6</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="http://www.cesociety.in/(S(vtswlubhzsfadhtt140d5u5t))/mbpatelscience/images/news/UG%20Adm%20Schedule%20Circular.pdf"
+                                                                target="_blank">F.Y.B.Sc. Admission Guideline 2021</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li>
                                                     <a href="http://www.cesociety.in/mbpatelscience/images/news/IQAC%20Committee.pdf"
@@ -368,12 +381,9 @@
                                                     <a href="http://www.cesociety.in/mbpatelscience/images/news/Anti_Ragging.pdf"
                                                         target="_blank">Anti-Ragging</a>
                                                 </li>
-                                                <!-- <li class="">
-                                                    <a (click)="openPopup1()"><span>Form</span></a>
+                                                <li>
+                                                    <a>Bank Details</a>
                                                 </li>
-                                                <li class="">
-                                                    <a (click)="openPopup2()"><span>Annual Reports</span></a>
-                                                </li> -->
                                             </ul>
                                         </li>
                                     </ul> <!-- //.nav-menu -->
@@ -388,7 +398,7 @@
             <div style="max-width:100%;">
                 <div class="secondToolbar" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
                     <!-- <img src="assets/images/CES_logo.png" alt=""> -->
-                    <div class="row" style="background-color: #342424 ; height: 50px;">
+                    <div class="row" style="background-color: #573229 ; height: 50px;">
                         <div class="col-lg-2 text-end mt-10">
                             <img src="assets/images/mbpatel/logo/2.png" alt="" width="45%">
                         </div>
@@ -398,25 +408,15 @@
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
                                             <li class="menu-item-has-children">
-                                                <a routerLink="/home/main" routerLinkActive="active">Home</a>
+                                                <a routerLink="/mbpatel/home/main" routerLinkActive="active">Home</a>
                                                 <ul class="sub-menu">
                                                     <li><a routerLink="" routerLinkActive="active">CES Home</a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children">
-                                                <a>About Us</a>
-                                                <ul class="sub-menu">
-                                                    <li><a routerLink="mbpatel/" routerLinkActive="active">History</a>
-                                                    </li>
-                                                    <li><a routerLink="mbpatel/" routerLinkActive="active">Facility</a>
-                                                    </li>
-                                                    <li><a routerLink="" routerLinkActive="active">Activities</a> </li>
-                                                    <li><a routerLink="" routerLinkActive="active">Scholarships for
-                                                            Students</a> </li>
-                                                    <li><a routerLink="" routerLinkActive="active">Fee Structure-
-                                                            2020-21 </a> </li>
-                                                </ul>
+                                            <li>
+                                                <a routerLink="/mbpatel/basic/about" routerLinkActive="active">About
+                                                    Us</a>
                                             </li>
 
                                             <li class="menu-item-has-children">
@@ -426,26 +426,21 @@
                                                     <li><a href="#">Videos</a> </li>
                                                 </ul>
                                             </li>
-
-                                            <!-- <li class="menu-item">
-                                                <a href="#">Infrastructure</a>
-                                            </li> -->
-
                                             <li class="menu-item-has-children">
                                                 <a href="">Course</a>
                                                 <ul class="sub-menu">
-                                                    <li><a (click)="openPopup1()">Syllabus</a> </li>
+                                                    <li><a (click)="openPopup()">Syllabus</a> </li>
                                                     <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Program_Outcomes.pdf"
                                                             target="_blank">Course Outcomes</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="">
-                                                <a routerLink="" routerLinkActive="active">Contact Us</a>
+                                                <a routerLink="/mbpatel/basic/contact" routerLinkActive="active">Contact
+                                                    Us</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a routerLink="" routerLinkActive="active">More</a>
                                                 <ul class="sub-menu">
-                                                    <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
                                                     <li><a routerLink="" routerLinkActive="active">Results</a> </li>
                                                     <li>
                                                         <a href="http://www.cesociety.in/mbpatelscience/images/Forms/MB%20Science%20College%20Prospectus%202018%20-%202019-min.pdf"
@@ -453,6 +448,7 @@
                                                     </li>
                                                     <li class="menu-item-has-children">
                                                         <a href="#">NAAC</a>
+
                                                         <ul class="sub-menu" style="width: 280%;">
                                                             <div class="row">
                                                                 <div class="col-md-3">
@@ -506,8 +502,10 @@
                                                                     <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/College_Committee_list_2018.pdf"
                                                                             target="_blank">College Committee Lists</a>
                                                                     </li>
-                                                                    <li><a href="#">Academic Calenders</a> </li>
-                                                                    <li><a href="#">NAAC Criteria</a> </li>
+                                                                    <li><a (click)="openPopup4()">Academic Calenders</a>
+                                                                    </li>
+                                                                    <li><a (click)="openPopup5()">NAAC Criteria</a>
+                                                                    </li>
                                                                     <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Feedback.pdf"
                                                                             target="_blank">Sample Feedback</a> </li>
                                                                 </div>
@@ -532,21 +530,67 @@
                                                                             target="_blank">NAAC Accreditation</a> </li>
                                                                 </div>
                                                             </div>
-
-
-
-
-
                                                         </ul>
                                                     </li>
+
                                                     <li class="menu-item-has-children">
                                                         <a href="#">Student Info.</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="#">Admission list</a>
+                                                                <ul class="sub-menu">
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2013_2014.pdf"
+                                                                            target="_blank">2013-14</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2014_2015.pdf"
+                                                                            target="_blank">2014-15</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2015_2016.pdf"
+                                                                            target="_blank">2015-16</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2016_2017.pdf"
+                                                                            target="_blank">2016-17</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2017_2018.pdf"
+                                                                            target="_blank">2017-18</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/MB_2018_2019.pdf"
+                                                                            target="_blank">2018-19</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/Year_2019-20.pdf"
+                                                                            target="_blank">2019-20</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a routerLink="/mbpatel/more/form"
+                                                                    routerLinkActive="active">Student Detail Form</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="http://www.cesociety.in/mbpatelscience/images/news/Exam%20Pattern.pdf"
+                                                                    target="_blank">Exam Patterns</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="#">Student Enrollment</a>
+                                                                <ul class="sub-menu">
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT%20-2020-21.pdf"
+                                                                            target="_blank">2020-21</a></li>
+                                                                    <li><a href="http://www.cesociety.in/mbpatelscience/images/news/FYBSC%20ENROLLEMENT-2019-20.pdf"
+                                                                            target="_blank">2019-20</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="http://www.cesociety.in/mbpatelscience/images/news/Gold%20Medal.pdf"
+                                                                    target="_blank">Achievements</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a (click)="openPopup3()">Timetable Sem 1 to 6</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="http://www.cesociety.in/(S(vtswlubhzsfadhtt140d5u5t))/mbpatelscience/images/news/UG%20Adm%20Schedule%20Circular.pdf"
+                                                                    target="_blank">F.Y.B.Sc. Admission Guideline
+                                                                    2021</a>
+                                                            </li>
+                                                        </ul>
                                                     </li>
-                                                    <li class="menu-item-has-children">
+                                                    <li>
                                                         <a href="http://www.cesociety.in/mbpatelscience/images/news/IQAC%20Committee.pdf"
                                                             target="_blank">IQAC Committee</a>
                                                     </li>
-                                                    <li class="menu-item-has-children">
+                                                    <li>
                                                         <a href="http://www.cesociety.in/mbpatelscience/images/news/CWDC.pdf"
                                                             target="_blank">CWDC Committee</a>
                                                     </li>
@@ -563,12 +607,9 @@
                                                         <a href="http://www.cesociety.in/mbpatelscience/images/news/Anti_Ragging.pdf"
                                                             target="_blank">Anti-Ragging</a>
                                                     </li>
-                                                    <!-- <li class="">
-                                                        <a (click)="openPopup1()"><span>Form</span></a>
+                                                    <li>
+                                                        <a>Bank Details</a>
                                                     </li>
-                                                    <li class="">
-                                                        <a (click)="openPopup2()"><span>Annual Reports</span></a>
-                                                    </li> -->
                                                 </ul>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
@@ -1064,11 +1105,177 @@
                 </div>
             </div>
         </div>
+        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle4}">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Academic Calenders</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul style="list-style-type:decimal;">
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/university%20academic%20calendar.pdf"
+                                    target="_blank">University Academic Calendar</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic%20calendar%2021-22.pdf"
+                                    target="_blank">Academic Calender 2021-2022</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2019-2020.pdf"
+                                    target="_blank">Academic Calender 2019-2020</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2018-2019.pdf"
+                                    target="_blank">Academic Calender 2018-2019</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2017_2018.pdf"
+                                    target="_blank">Academic Calender 2017-2018</a> </li>
+                            <li><a href="cesociety.in/mbpatelscience/IQAC/Academic_Calender_2016_2017.pdf"
+                                    target="_blank">Academic Calender 2016-2017</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2015_2016.pdf"
+                                    target="_blank">Academic Calender 2015-2016</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2014_2015.pdf"
+                                    target="_blank">Academic Calender 2014-2015</a> </li>
+                            <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/Academic_Calender_2013_2014.pdf"
+                                    target="_blank">Academic Calender 2013-2014</a> </li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" (click)="closePopup()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle5}">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">NAAC Criteria</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul style="list-style-type:decimal;">
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_1_3.pdf"
+                                            target="_blank">Criteria-11_1_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_2_1.pdf"
+                                            target="_blank">Criteria-1 1_2_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_2_2.pdf"
+                                            target="_blank">Criteria-1 1_2_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_3_1.pdf"
+                                            target="_blank">Criteria-1 1_3_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_3_2.pdf"
+                                            target="_blank">Criteria-1 1_3_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_3_3.pdf"
+                                            target="_blank">Criteria-1 1_3_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_4_1.pdf"
+                                            target="_blank">Criteria-1 1_4_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/1_4_2.pdf"
+                                            target="_blank">Criteria-1 1_4_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_1_1.pdf"
+                                            target="_blank">Criteria-2 2_1_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_2_3.pdf"
+                                            target="_blank">Criteria-2 2_2_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_3_2.pdf"
+                                            target="_blank">Criteria-2 2_3_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_4_1.pdf"
+                                            target="_blank">Criteria-2 2_4_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_4_4.pdf"
+                                            target="_blank">Criteria-2 2_4_4</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_4_5.pdf"
+                                            target="_blank">Criteria-2 2_4_5</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/2_6_1.pdf"
+                                            target="_blank">Criteria-2 2_6_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_1_1.pdf"
+                                            target="_blank">Criteria-3 3_1_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_1_2.pdf"
+                                            target="_blank">Criteria-3 3_1_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_1_3.pdf"
+                                            target="_blank">Criteria-3 3_1_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_3_3.pdf"
+                                            target="_blank">Criteria-3 3_3_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_1.pdf"
+                                            target="_blank">Criteria-3 3_4_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_2.pdf"
+                                            target="_blank">Criteria-3 3_4_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_3.pdf"
+                                            target="_blank">Criteria-3 3_4_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_4_4.pdf"
+                                            target="_blank">Criteria-3 3_4_4</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_5_1.pdf"
+                                            target="_blank">Criteria-3 3_5_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/3_5_2.pdf"
+                                            target="_blank">Criteria-3 3_5_2</a> </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul style="list-style-type:decimal;">
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_1_3.pdf"
+                                            target="_blank">Criteria-4 4_1_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_1_4.pdf"
+                                            target="_blank">Criteria-4 4_1_4</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_2_3.pdf"
+                                            target="_blank">Criteria-4 4_2_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_2_4.pdf"
+                                            target="_blank">Criteria-4 4_2_4</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_2_6.pdf"
+                                            target="_blank">Criteria-4 4_2_6</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_3_3.pdf"
+                                            target="_blank">Criteria-4 4_3_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/4_4_1.pdf"
+                                            target="_blank">Criteria-4 4_4_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_1.pdf"
+                                            target="_blank">Criteria-5 5_1_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_2.pdf"
+                                            target="_blank">Criteria-5 5_1_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_3.pdf"
+                                            target="_blank">Criteria-5 5_1_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_1_6.pdf"
+                                            target="_blank">Criteria-5 5_1_6</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_3_3.pdf"
+                                            target="_blank">Criteria-5 5_3_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/5_4_3.pdf"
+                                            target="_blank">Criteria-5 5_4_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_2_1.pdf"
+                                            target="_blank">Criteria-6 6_2_1</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_2_3.pdf"
+                                            target="_blank">Criteria-6 6_2_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_3_4.pdf"
+                                            target="_blank">Criteria-6 6_3_4</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_4_2.pdf"
+                                            target="_blank">Criteria-6 6_4_2</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/6_5_3.pdf"
+                                            target="_blank">Criteria-6 6_5_3</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_5.pdf"
+                                            target="_blank">Criteria-7 7_1_5</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_8.pdf"
+                                            target="_blank">Criteria-7 7_1_8</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_12.pdf"
+                                            target="_blank">Criteria-7 7_1_12</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_14.pdf"
+                                            target="_blank">Criteria-7 7_1_14</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_15.pdf"
+                                            target="_blank">Criteria-7 7_1_15</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_16.pdf"
+                                            target="_blank">Criteria-7 7_1_16</a> </li>
+                                    <li><a href="http://www.cesociety.in/mbpatelscience/IQAC/7_1_17.pdf"
+                                            target="_blank">Criteria-7 7_1_17</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" (click)="closePopup()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <style>
             .modal-body {
                 padding: 2rem;
             }
         </style>
+
+       
 
     </header>
 

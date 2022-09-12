@@ -85,7 +85,8 @@
                 aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"
                 (click)="isCollapsed = !isCollapsed">
                 <!-- <span class="navbar-toggler-icon"> </span> -->
-                <img class="navbar-toggler-icon" src="assets/images/shape/icon.png" alt="">
+                <!-- <img class="navbar-toggler-icon" src="assets/images/shape/icon.png" alt=""> -->
+                <i class="fa fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
@@ -165,25 +166,26 @@
 
                                 <nav class="rs-menu">
                                     <ul class="nav-menu">
+
                                         <li class="menu-item-has-children">
-                                            <a routerLink="/home/main" routerLinkActive="active">Home</a>
+                                            <a routerLink="/anpatel/home/main" routerLinkActive="active">Home</a>
                                             <ul class="sub-menu">
                                                 <li><a routerLink="" routerLinkActive="active">CES Home</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a>About Us</a>
+                                            <a routerLink="" routerLinkActive="active">About Us</a>
                                             <ul class="sub-menu">
-                                                <li><a routerLink="anpatel/anbasic/about" routerLinkActive="active">History</a>
+                                                <li><a routerLink="/anpatel/basic/about" routerLinkActive="active">History</a>
                                                 </li>
-                                                <li><a routerLink="anpate/anbasic/trust" routerLinkActive="active">The Trust</a>
+                                                <li><a routerLink="/anpatel/basic/trust" routerLinkActive="active">The Trust</a>
                                                 </li>
                                             </ul>
                                         </li>
-
                                         <li class="menu-item-has-children">
                                             <a href="#">Gallery/Media</a>
+
                                             <ul class="sub-menu">
                                                 <li><a href="#">Old Photos</a> </li>
                                                 <li><a href="#">Photos</a> </li>
@@ -193,18 +195,18 @@
                                         </li>
 
                                         <li class="menu-item">
-                                            <a href="#">Infrastructure</a>
+                                            <a routerLink="/anpatel/inf/infra" routerLinkActive="active">Infrastructure</a>
                                         </li>
 
                                         <li class="menu-item-has-children">
                                             <a href="">Course</a>
                                             <ul class="sub-menu">
-                                                <li><a routerLink="" routerLinkActive="active">Science</a> </li>
-                                                <li><a routerLink="" routerLinkActive="active">Paramedical</a> </li>
+                                                <li><a routerLink="/anpatel/course/science" routerLinkActive="active">Science</a> </li>
+                                                <li><a routerLink="/anpatel/course/para" routerLinkActive="active">Paramedical</a> </li>
                                             </ul>
                                         </li>
                                         <li class="">
-                                            <a routerLink="" routerLinkActive="active">Contact Us</a>
+                                            <a routerLink="/anpatel/basic/contact" routerLinkActive="active">Contact Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a routerLink="" routerLinkActive="active">More</a>
@@ -212,11 +214,25 @@
                                                 <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
                                                 <li><a routerLink="" routerLinkActive="active">Results</a> </li>
                                                 <li>
-                                                    <a routerLink="/academic/student"
+                                                    <a routerLink="/anpatel/basic/committee"
                                                         routerLinkActive="active">Committee</a>
                                                 </li>
                                                 <li class="menu-item-has-children">
                                                     <a href="#">Student Corner</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="#">Academic Calendar</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="/anpatel/more/syllabus" routerLinkActive="active">Syllabus</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a routerLink="/anpatel/more/paper" routerLinkActive="active">Old Question Papers</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a href="#">Scholarships for Students</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li class="">
                                                     <a (click)="openPopup1()"><span>Form</span></a>
@@ -249,7 +265,7 @@
                                         <ul class="nav-menu">
 
                                             <li class="menu-item-has-children">
-                                                <a routerLink="/landing/main" routerLinkActive="active">Home</a>
+                                                <a routerLink="/anpatel/home/main" routerLinkActive="active">Home</a>
                                                 <ul class="sub-menu">
                                                     <li><a routerLink="" routerLinkActive="active">CES Home</a>
                                                     </li>
@@ -258,9 +274,9 @@
                                             <li class="menu-item-has-children">
                                                 <a routerLink="" routerLinkActive="active">About Us</a>
                                                 <ul class="sub-menu">
-                                                    <li><a routerLink="/anpatel/anbasic/about" routerLinkActive="active">History</a>
+                                                    <li><a routerLink="/anpatel/basic/about" routerLinkActive="active">History</a>
                                                     </li>
-                                                    <li><a routerLink="anpatel/anbasic/trust" routerLinkActive="active">The Trust</a>
+                                                    <li><a routerLink="/anpatel/basic/trust" routerLinkActive="active">The Trust</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -276,18 +292,18 @@
                                             </li>
 
                                             <li class="menu-item">
-                                                <a href="#">Infrastructure</a>
+                                                <a routerLink="/anpatel/inf/infra" routerLinkActive="active">Infrastructure</a>
                                             </li>
 
                                             <li class="menu-item-has-children">
                                                 <a href="">Course</a>
                                                 <ul class="sub-menu">
-                                                    <li><a routerLink="" routerLinkActive="active">Science</a> </li>
-                                                    <li><a routerLink="" routerLinkActive="active">Paramedical</a> </li>
+                                                    <li><a routerLink="/anpatel/course/science" routerLinkActive="active">Science</a> </li>
+                                                    <li><a routerLink="/anpatel/course/para" routerLinkActive="active">Paramedical</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="">
-                                                <a routerLink="" routerLinkActive="active">Contact Us</a>
+                                                <a routerLink="/anpatel/basic/contact" routerLinkActive="active">Contact Us</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a routerLink="" routerLinkActive="active">More</a>
@@ -295,11 +311,25 @@
                                                     <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
                                                     <li><a routerLink="" routerLinkActive="active">Results</a> </li>
                                                     <li>
-                                                        <a routerLink="/academic/student"
+                                                        <a routerLink="/anpatel/basic/committee"
                                                             routerLinkActive="active">Committee</a>
                                                     </li>
                                                     <li class="menu-item-has-children">
                                                         <a href="#">Student Corner</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="#">Academic Calendar</a>
+                                                            </li>
+                                                            <li class="current-menu-item">
+                                                                <a routerLink="/anpatel/more/syllabus" routerLinkActive="active">Syllabus</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a routerLink="/anpatel/more/paper" routerLinkActive="active">Old Question Papers</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a href="#">Scholarships for Students</a>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                     <li class="">
                                                         <a (click)="openPopup1()"><span>Form</span></a>

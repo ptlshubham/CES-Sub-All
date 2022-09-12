@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MbPatelRoutes } from './mbpatel.routing';
 import { MbsharedModule } from './mbshared/mbshared.module';
 import { MbbasicModule } from './mbbasic/mbbasic.module';
+import { MbdepartmentModule } from './mbdepartment/mbdepartment.module';
 
 
 
@@ -17,6 +18,7 @@ import { MbbasicModule } from './mbbasic/mbbasic.module';
     MbhomeModule,
     MbsharedModule,
     MbbasicModule,
+    MbdepartmentModule,
     RouterModule.forChild(MbPatelRoutes)
   ]
 })

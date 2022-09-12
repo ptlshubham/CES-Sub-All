@@ -1,0 +1,9 @@
+.tabs-content{
+    text-align: justify;
+}
+
+@media screen and (min-width: 992px){
+    .tab1{
+        width: 413px;
+    }
+}
