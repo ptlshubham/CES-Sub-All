@@ -1,3 +1,66 @@
+<div id="accordion" class="accordion">
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <section class="servicesHome">
+            <div class="container">
+
+
+                <div class="row card1">
+                    <a data-toggle="collapse" data-bs-parent="#accordion" data-bs-toggle="collapse" href="#collapseTwo">
+                        <i class="fa fa-times-circle" style="float: right; color: white; font-size:24px"></i></a>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul>
+                                <li><i class="fa fa-check-square"></i> <a class="white" routerLink="/academic/school"
+                                        routerLinkActive="active"> Preschool</a></li>
+                                <li><i class="fa fa-check-square"></i> Standard 11 to 12</li>
+                                <li><i class="fa fa-check-square"></i> B.Com.</li>
+                                <li><i class="fa fa-check-square"></i> B.Sc.</li>
+                                <li><i class="fa fa-check-square"></i> M.Ed.</li>
+                                <li><i class="fa fa-check-square"></i> Ph.D.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li><i class="fa fa-check-square"></i> Standard 1 to 5</li>
+                                <li><i class="fa fa-check-square"></i> B.A.</li>
+                                <li><i class="fa fa-check-square"></i> B.Ed.</li>
+                                <li><i class="fa fa-check-square"></i> MLT</li>
+                                <li><i class="fa fa-check-square"></i> M.S.W.</li>
+                                <li><i class="fa fa-check-square"></i> B.Sc. IT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li><i class="fa fa-check-square"></i> Standard 6 to 8</li>
+                                <li><i class="fa fa-check-square"></i> B.B.A.</li>
+                                <li><i class="fa fa-check-square"></i> B.P.Ed.</li>
+                                <li><i class="fa fa-check-square"></i> M.A.</li>
+                                <li><i class="fa fa-check-square"></i> M.Sc.</li>
+                                <li><i class="fa fa-check-square"></i> View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li><i class="fa fa-check-square"></i> Standard 9 to 10</li>
+                                <li><i class="fa fa-check-square"></i> B.C.A.</li>
+                                <li><i class="fa fa-check-square"></i> B.S.W.</li>
+                                <li><i class="fa fa-check-square"></i> M.Com.</li>
+                                <li><i class="fa fa-check-square"></i> P.T.C.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 <div class="full-width-header header-style1 home1-modifiy">
     <header id="rs-header" class="rs-header">
         <div class="topbar-area dark-parimary-bg">
@@ -38,26 +101,30 @@
                 <div class="col-lg-7 col-md-12 col-sm-12">
                     <div class="logo-cat-wrap">
                         <div class="logo-part">
-                            <a href="index.html">
+                            <a routerLink="/mbpatel/home/main" routerLinkActive="active">
                                 <img src="assets/images/mbpatel/logo/3.png" alt="">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-end m1" style="padding-right:30px;">
+                <div class="col-lg-5 text-start m1" style="padding-right:30px;">
 
                     <ul class="topbar-right">
                         <li class="menu-item lm">
-                            <div class="wrap">
-                                <div class="search" >
-                                    <input type="text" class="searchTerm" placeholder="What are you looking for?"
-                                        style="color: #573229;">
-                                    <button type="submit" class="searchButton">
-                                        <i class="fa fa-search"></i>
-                                    </button>
+                                <div class="wrap">
+                                    <div class="search">
+                                        <a class="card-link collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" href="#" (click)="moreOpen()"
+                                            aria-expanded="true">
+                                            <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                                                style="color: #203154;">
+                                        </a>
+                                        <button type="submit" class="searchButton">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
                         <li class="menu-item lm">
                             <a href="#">Centenary Celebration</a>
@@ -107,7 +174,7 @@
                             aria-expanded="false">Gallery/Media</a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">Photos</a> </li>
+                            <li><a class="dropdown-item" routerLink="/mbpatel/gallery/photos" routerLinkActive="active">Photos</a> </li>
                             <li><a class="dropdown-item">Videos</a> </li>
                         </ul>
                     </li>
@@ -200,7 +267,7 @@
                                         <li class="menu-item-has-children">
                                             <a href="#">Gallery/Media</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Photos</a> </li>
+                                                <li><a routerLink="/mbpatel/gallery/photos" routerLinkActive="active">Photos</a> </li>
                                                 <li><a href="#">Videos</a> </li>
                                             </ul>
                                         </li>
@@ -400,7 +467,9 @@
                     <!-- <img src="assets/images/CES_logo.png" alt=""> -->
                     <div class="row" style="background-color: #573229 ; height: 50px;">
                         <div class="col-lg-2 text-end mt-10">
+                                <a routerLink="/mbpatel/home/main" routerLinkActive="active">
                             <img src="assets/images/mbpatel/logo/2.png" alt="" width="45%">
+                        </a>
                         </div>
                         <div class="col-lg-10 text-start" style="margin-top: 5px;">
                             <div class="rs-menu-area jc">
@@ -422,7 +491,7 @@
                                             <li class="menu-item-has-children">
                                                 <a href="#">Gallery/Media</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="#">Photos</a> </li>
+                                                    <li><a routerLink="/mbpatel/gallery/photos" routerLinkActive="active">Photos</a> </li>
                                                     <li><a href="#">Videos</a> </li>
                                                 </ul>
                                             </li>
@@ -657,7 +726,7 @@
                                                 target="_blank">Environmental Studies</a> </td>
                                         <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02SENV21%20Environmental%20Studies.pdf"
                                                 target="_blank">SEM- 2</a> </td>
-                                    </tr>
+                                    </tr>       
                                     <tr>
                                         <td> <a href="http://www.cesociety.in/mbpatelscience/images/Syllabus/US02CICV21%20Process%20Calculations%20&%20Mechanical%20Operations.pdf"
                                                 target="_blank">Industrial Chemistry</a> </td>

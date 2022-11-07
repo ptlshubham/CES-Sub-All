@@ -6,11 +6,13 @@ import { MbPatelRoutes } from './mbpatel.routing';
 import { MbsharedModule } from './mbshared/mbshared.module';
 import { MbbasicModule } from './mbbasic/mbbasic.module';
 import { MbdepartmentModule } from './mbdepartment/mbdepartment.module';
+import { MbgalleryModule } from './mbgallery/mbgallery.module';
 
 
 
 @NgModule({
   declarations: [
+
   
   ],
   imports: [
@@ -19,6 +21,7 @@ import { MbdepartmentModule } from './mbdepartment/mbdepartment.module';
     MbsharedModule,
     MbbasicModule,
     MbdepartmentModule,
+    MbgalleryModule,
     RouterModule.forChild(MbPatelRoutes)
   ]
 })

@@ -6,6 +6,7 @@ import { AnhomeModule } from '../anhome/anhome.module';
 import { AnsharedModule } from '../anshared/anshared.module';
 import { AnSyllabusComponent } from './an-syllabus/an-syllabus.component';
 import { AnPapersComponent } from './an-papers/an-papers.component';
+import { AnResultComponent } from './an-result/an-result.component';
 
 
 
@@ -13,7 +14,8 @@ import { AnPapersComponent } from './an-papers/an-papers.component';
   declarations: [
   
     AnSyllabusComponent,
-       AnPapersComponent
+       AnPapersComponent,
+       AnResultComponent
   ],
   imports: [
     CommonModule,

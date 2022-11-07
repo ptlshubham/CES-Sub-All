@@ -20,5 +20,9 @@ export const MbPatelRoutes: Routes = [{
 {
     path: 'more',
     loadChildren: () => import('./mbmore/mbmore.module').then(m => m.MbmoreModule)
+},
+{
+    path: 'gallery',
+    loadChildren: () => import('./mbgallery/mbgallery.module').then(m => m.MbgalleryModule)
 }
 ];

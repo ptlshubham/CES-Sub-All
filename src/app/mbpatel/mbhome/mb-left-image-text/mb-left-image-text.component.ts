@@ -15,7 +15,7 @@ export class MbLeftImageTextComponent implements OnInit {
   public subtitle: string = '';
   public asubtitle: string = 'M.B.Patel Science College';
   public dimg: string = 'assets/images/anpatel/about/1.jpg';
-  himg: string = 'assets/images/anpatel/about/1.jpg';
+  himg: string = 'assets/images/anpatel/about/22.jpg';
   daimg: string = '';
   constructor(
     private router: Router,

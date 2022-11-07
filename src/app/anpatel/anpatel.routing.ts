@@ -29,4 +29,8 @@ export const AnPatelRoutes: Routes = [{
     path: 'more',
     loadChildren: () => import('./anmore/anmore.module').then(m => m.AnmoreModule)
 },
+{
+    path: 'gallery',
+    loadChildren: () => import('./angallery/angallery.module').then(m => m.AngalleryModule)
+},
 ];

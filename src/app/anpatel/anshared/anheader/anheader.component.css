@@ -218,7 +218,7 @@ a{
     width: 37%;
     position: absolute;
     top: 50%;
-    left: 14%;
+    left: -17%;
     transform: translate(-50%, -50%);
   }
   .btn-group, .btn-group-vertical{
@@ -287,4 +287,54 @@ a{
 
 
 
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #fff !important;
+  color: #342424;
+  
+}
+
+
+
+.card1{
+  margin: 30px;
+  background-color: #342424;
+    font-family: calibri, 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+.fa{
+  padding-right: 5px;
+}
+.white{
+  color: white;
+}
+
+
+
+
+.modal .modal-frame {
+  position: absolute;
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+.modal .modal-side {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 400px;
+  margin: 0;
+}
+
+.modal .modal-left {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 400px;
+  margin: 0;
+}
 

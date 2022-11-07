@@ -1,3 +1,66 @@
+<div id="accordion" class="accordion">
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <section class="servicesHome">
+            <div class="container">
+
+
+                <div class="row card1">
+                    <a data-toggle="collapse" data-bs-parent="#accordion" data-bs-toggle="collapse" href="#collapseTwo">
+                        <i class="fa fa-times-circle" style="float: right; color: white; font-size:24px"></i></a>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul>
+                                <li><i class="fa fa-check-square"></i> <a class="white" routerLink="/academic/school"
+                                        routerLinkActive="active"> Preschool</a></li>
+                                <li><i class="fa fa-check-square"></i> Standard 11 to 12</li>
+                                <li><i class="fa fa-check-square"></i> B.Com.</li>
+                                <li><i class="fa fa-check-square"></i> B.Sc.</li>
+                                <li><i class="fa fa-check-square"></i> M.Ed.</li>
+                                <li><i class="fa fa-check-square"></i> Ph.D.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li><i class="fa fa-check-square"></i> Standard 1 to 5</li>
+                                <li><i class="fa fa-check-square"></i> B.A.</li>
+                                <li><i class="fa fa-check-square"></i> B.Ed.</li>
+                                <li><i class="fa fa-check-square"></i> MLT</li>
+                                <li><i class="fa fa-check-square"></i> M.S.W.</li>
+                                <li><i class="fa fa-check-square"></i> B.Sc. IT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li><i class="fa fa-check-square"></i> Standard 6 to 8</li>
+                                <li><i class="fa fa-check-square"></i> B.B.A.</li>
+                                <li><i class="fa fa-check-square"></i> B.P.Ed.</li>
+                                <li><i class="fa fa-check-square"></i> M.A.</li>
+                                <li><i class="fa fa-check-square"></i> M.Sc.</li>
+                                <li><i class="fa fa-check-square"></i> View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li><i class="fa fa-check-square"></i> Standard 9 to 10</li>
+                                <li><i class="fa fa-check-square"></i> B.C.A.</li>
+                                <li><i class="fa fa-check-square"></i> B.S.W.</li>
+                                <li><i class="fa fa-check-square"></i> M.Com.</li>
+                                <li><i class="fa fa-check-square"></i> P.T.C.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 <div class="full-width-header header-style1 home1-modifiy">
     <header id="rs-header" class="rs-header">
         <div class="topbar-area dark-parimary-bg">
@@ -37,20 +100,24 @@
                 <div class="col-lg-7 col-md-12 col-sm-12">
                     <div class="logo-cat-wrap">
                         <div class="logo-part">
-                            <a href="index.html">
+                            <a routerLink="/anpatel/home/main" routerLinkActive="active">
                                 <img src="assets/images/anpatel/logo/ANPatel.png" alt="">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-end m1" style="padding-right:30px;">
+                <div class="col-lg-5 text-start m1" style="padding-right:30px;">
 
                     <ul class="topbar-right">
                         <li class="menu-item lm">
                             <div class="wrap">
                                 <div class="search">
-                                    <input type="text" class="searchTerm" placeholder="What are you looking for?"
-                                        style="color: #342424;">
+                                    <a class="card-link collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" href="#" (click)="moreOpen()"
+                                        aria-expanded="true">
+                                        <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                                            style="color: #203154;">
+                                    </a>
                                     <button type="submit" class="searchButton">
                                         <i class="fa fa-search"></i>
                                     </button>
@@ -93,7 +160,7 @@
                 <ul class="nav-menu" style="padding: 25px!important;">
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Home</a>
+                            aria-expanded="false" routerLink="/anpatel/home/main" routerLinkActive="active">Home</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item">CES Home</a> </li>
                         </ul>
@@ -102,8 +169,8 @@
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">About Us</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">History</a> </li>
-                            <li><a class="dropdown-item">The Trust</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/basic/about" routerLinkActive="active">History</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/basic/trust" routerLinkActive="active">The Trust</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
@@ -111,8 +178,8 @@
                             aria-expanded="false">Gallery/Media</a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">Old Photos</a> </li>
-                            <li><a class="dropdown-item">Photos</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/gallery/photos" routerLinkActive="active">Photos</a> </li>
+                            <!-- <li><a class="dropdown-item">Photos</a> </li> -->
                             <li><a class="dropdown-item">Documentary Film</a> </li>
                             <li><a class="dropdown-item">Our Magazine Balmitra</a> </li>
                         </ul>
@@ -120,7 +187,7 @@
 
                     <li class="btn-group">
                         <a class="btn btn-lg" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Infrastructure</a>
+                            aria-expanded="false" routerLink="/anpatel/inf/infra" routerLinkActive="active">Infrastructure</a>
 
                     </li>
 
@@ -128,20 +195,20 @@
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Course</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Science</a> </li>
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Paramedical</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/course/science" routerLinkActive="active">Science</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/course/para" routerLinkActive="active">Paramedical</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
-                        <a class="btn btn-lg" routerLink="/basic/alumni" routerLinkActive="active">Contact Us</a>
+                        <a class="btn btn-lg" routerLink="/anpatel/basic/contact" routerLinkActive="active">Contact Us</a>
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">More</a>
                         <ul class="dropdown-menu">
                             <!-- <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Department</a> </li> -->
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Results</a> </li>
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Committee</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/more/result" routerLinkActive="active">Results</a> </li>
+                            <li><a class="dropdown-item" routerLink="/anpatel/basic/committee" routerLinkActive="active">Committee</a> </li>
                             <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Student Corner</a>
                             </li>
                             <li><a class="dropdown-item" routerLink="" routerLinkActive="active" (click)="openPopup1()">Form</a> </li>
@@ -187,8 +254,8 @@
                                             <a href="#">Gallery/Media</a>
 
                                             <ul class="sub-menu">
-                                                <li><a href="#">Old Photos</a> </li>
-                                                <li><a href="#">Photos</a> </li>
+                                                <li><a routerLink="/anpatel/gallery/photos" routerLinkActive="active">Photos</a> </li>
+                                                <!-- <li><a href="#">Photos</a> </li> -->
                                                 <li><a href="#">Documentary Film</a> </li>
                                                 <li><a href="#">Our Magazine Balmitra</a> </li>
                                             </ul>
@@ -212,7 +279,8 @@
                                             <a routerLink="" routerLinkActive="active">More</a>
                                             <ul class="sub-menu">
                                                 <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
-                                                <li><a routerLink="" routerLinkActive="active">Results</a> </li>
+                                                <li><a routerLink="/anpatel/more/result" routerLinkActive="active">Results</a> 
+                                                </li>
                                                 <li>
                                                     <a routerLink="/anpatel/basic/committee"
                                                         routerLinkActive="active">Committee</a>
@@ -256,7 +324,9 @@
                     <!-- <img src="assets/images/CES_logo.png" alt=""> -->
                     <div class="row" style="background-color: #342424 ; height: 50px;">
                         <div class="col-lg-2 text-end mt-10">
+                            <a routerLink="/anpatel/home/main" routerLinkActive="active">
                             <img src="assets/images/anpatel/logo/2.png" alt="" width="45%">
+                        </a>
                         </div>
                         <div class="col-lg-10 text-start" style="margin-top: 5px;">
                             <div class="rs-menu-area jc">
@@ -284,8 +354,8 @@
                                                 <a href="#">Gallery/Media</a>
 
                                                 <ul class="sub-menu">
-                                                    <li><a href="#">Old Photos</a> </li>
-                                                    <li><a href="#">Photos</a> </li>
+                                                    <li><a routerLink="/anpatel/gallery/photos" routerLinkActive="active">Photos</a> </li>
+                                                    <!-- <li><a href="#">Photos</a> </li> -->
                                                     <li><a href="#">Documentary Film</a> </li>
                                                     <li><a href="#">Our Magazine Balmitra</a> </li>
                                                 </ul>
@@ -309,7 +379,7 @@
                                                 <a routerLink="" routerLinkActive="active">More</a>
                                                 <ul class="sub-menu">
                                                     <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
-                                                    <li><a routerLink="" routerLinkActive="active">Results</a> </li>
+                                                    <li><a routerLink="/anpatel/more/result" routerLinkActive="active">Results</a> </li>
                                                     <li>
                                                         <a routerLink="/anpatel/basic/committee"
                                                             routerLinkActive="active">Committee</a>

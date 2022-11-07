@@ -9,6 +9,7 @@ export class AnheaderComponent implements OnInit {
   public isCollapsed = true;
   isSticky: boolean = false;
   public collapsed = true;
+  readMore=false;
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
@@ -17,6 +18,9 @@ export class AnheaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  moreOpen(){
+    this.readMore=true;
   }
   displayStyle = "none";
   displayStyle1 = "none";

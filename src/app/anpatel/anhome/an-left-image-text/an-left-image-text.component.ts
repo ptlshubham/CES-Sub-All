@@ -17,8 +17,9 @@ export class AnLeftImageTextComponent implements OnInit {
   public subtitle: string = '';
   public asubtitle: string = 'Shri Alpesh N. Patel PG Institute of Science & Research';
   public tsubtitle: string = 'Charotar Education Society';
-  public dimg: string = 'assets/images/anpatel/about/1.jpg';
-  himg: string = 'assets/images/anpatel/about/1.jpg';
+  public dimg: string = 'assets/images/anpatel/about/11.jpg';
+  himg: string = 'assets/images/anpatel/about/44.jpg';
+  timg: string = 'assets/images/anpatel/about/33.jpg';
   daimg: string = '';
   constructor(
     private router: Router,
@@ -33,7 +34,7 @@ export class AnLeftImageTextComponent implements OnInit {
     }
    else if (this.router.url == "/anpatel/basic/trust") {
     this.textdata = this.trustdata;
-    this.daimg = this.himg;
+    this.daimg = this.timg;
     this.title = this.trusttitle;
     this.subtitle = this.tsubtitle;
    }
